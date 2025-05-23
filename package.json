@@ -1,0 +1,17 @@
+{
+  "name": "beenzod",               
+  "version": "1.0.0",
+  "description": "Beenzod – a utility JavaScript library with loader, notifier, error handler etc.",
+  "license": "MIT",                 
+  "author": "Avinash",
+  "type": "module",
+  "main": "index.js",
+  "keywords": ["utility", "javascript", "loader", "toast", "error handler", "beenzod"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/beenzod"
+  },
+  "scripts": {
+    "test": "echo \"No test yet\""
+  }
+}
