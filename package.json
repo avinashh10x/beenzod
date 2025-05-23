@@ -1,6 +1,6 @@
 {
   "name": "beenzod",               
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Beenzod – a utility JavaScript library with loader, notifier, error handler etc.",
   "license": "MIT",                 
   "author": "Avinash",

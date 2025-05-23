@@ -1,6 +1,3 @@
-import { createLoader, removeLoader } from "./loader"
 
-module.exports = {
-    createLoader,
-    removeLoader
-};
+
+export { createLoader, removeLoader } from './loader.js';

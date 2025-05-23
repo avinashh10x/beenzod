@@ -1,19 +1,17 @@
 function createLoader(options = {}) {
     const {
-      type = 'circle',    // 'circle' | 'bar'
-      color = '#3498db',  // default blue
-      size = 40,          // in px
-      time = null         // in milliseconds (auto remove time)
+      type = 'circle',
+      color = '#3498db',
+      size = 40,
+      time = null
     } = options;
   
-    // Remove old loader
     const oldLoader = document.getElementById('beenzod-loader');
     if (oldLoader) oldLoader.remove();
   
     const loader = document.createElement('div');
     loader.id = 'beenzod-loader';
   
-    // Apply dynamic styles
     if (type === 'circle') {
       loader.style.width = `${size}px`;
       loader.style.height = `${size}px`;
@@ -36,7 +34,6 @@ function createLoader(options = {}) {
   
     document.body.appendChild(loader);
   
-    // Inject CSS animations
     if (!document.getElementById('beenzod-style')) {
       const style = document.createElement('style');
       style.id = 'beenzod-style';
@@ -54,7 +51,6 @@ function createLoader(options = {}) {
       document.head.appendChild(style);
     }
   
-    // If time is passed, auto remove
     if (time && typeof time === 'number') {
       setTimeout(() => {
         removeLoader();
@@ -67,8 +63,5 @@ function createLoader(options = {}) {
     if (loader) loader.remove();
   }
   
-  module.exports = {
-    createLoader,
-    removeLoader
-  };
+  export { createLoader, removeLoader };
   
